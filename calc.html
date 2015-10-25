@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="calc-style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+<script src="calc-script.js"></script>
+
+<div id="calc">
+<div class="row">
+  <div class="button col-xs-3 clear" onclick="clearAll()">C</div>
+  <div class="button col-xs-9 digits"id="display">0</div>
+  </div>
+
+  <div id="keyPad">
+
+    <div class="row">
+    <div class="button col-xs-3 digits" onclick="addThis(7)">7</div>
+     <div class="button col-xs-3 digits" onclick="addThis(8)">8</div> 
+	 <div class="button col-xs-3 digits" onclick="addThis(9)">9</div>
+		<div class="othButton col-xs-3 button" onclick="calculate('X')">X</div>
+
+    </div>
+    <div class="row">
+    <div class="button col-xs-3 digits" onclick="addThis(4)">4</div>
+     <div class="button col-xs-3 digits" onclick="addThis(5)">5</div>
+	 <div class="button col-xs-3 digits" onclick="addThis(6)">6</div>
+	 	<div class="othButton col-xs-3 digits button" onclick="calculate('/')">/</div>
+    </div>
+    <div class="row">
+    <div class="button col-xs-3 digits" onclick="addThis(1)">1</div>
+     <div class="button col-xs-3 digits" onclick="addThis(2)">2</div>
+	 <div class="button col-xs-3 digits" onclick="addThis(3)">3</div>
+		<div class="othButton col-xs-3 button" onclick="calculate('-')">-</div>
+    </div>
+    <div class="row">
+    	<div class="button col-xs-3 digits"  onclick="addThis(0)">0</div>
+    	<div class="button col-xs-3 digits" id="decimal" onclick="addThis('.')">.</div> 
+		<div class="othButton col-xs-3 button" onclick="calculate('=')">=</div>
+	 	<div class="othButton col-xs-3 button" onclick="calculate('+')">+</div>
+    </div>
+  </div>
+
+
+</div>
+</br>
+Main number:<p id="firstNumber"></p>
+next number:<p id="secNumber"></p>
+Operand:<p id="operator"></p>
+Total=<p id="daTotal"></p>
+</body>
+</html>
